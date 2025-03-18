@@ -67,3 +67,4 @@
 /home/hkuser/MyProjects/docker_dotnet/bin/Debug/net9.0/runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll
 /home/hkuser/MyProjects/docker_dotnet/obj/Debug/net9.0/docker_dotnet.csproj.AssemblyReference.cache
 /home/hkuser/MyProjects/docker_dotnet/obj/Debug/net9.0/docker_d.7E055388.Up2Date
+/home/hkuser/MyProjects/docker_dotnet/obj/Debug/net9.0/docker_dotnet.sourcelink.json

@@ -27,13 +27,13 @@ namespace sqltest
 
                 await connection.OpenAsync();
 
-                var sql = "SELECT [Name],[Strength] FROM [MainData].[dbo].[medicine] WHERE Form = 'Cream' and Indication = 'Virus' and Manufacturer LIKE 'Roche%';";
+                var sql = "SELECT [Name],[Strength], [Indication] FROM [MainData].[dbo].[medicine] WHERE Form = 'Cream' and Indication = 'Virus' and Manufacturer LIKE 'Roche%';";
                 await using var command = new SqlCommand(sql, connection);
                 await using var reader = await command.ExecuteReaderAsync();
 
                 while (await reader.ReadAsync())
                 {
-                    Console.WriteLine("{0} {1}", reader.GetString(0), reader.GetString(1));
+                    Console.WriteLine("{0} {1} {2} {3} {4}", reader.GetString(0), "|" ,reader.GetString(1), "|" , reader.GetString(2));
                 }
             }
             catch (SqlException e) when (e.Number == 404)
