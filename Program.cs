@@ -13,7 +13,7 @@ namespace sqltest
                 DataSource = "127.0.0.1,1434",
                 TrustServerCertificate = true,
                 UserID = "sa",
-                Password = "QAZ123wsxzx",
+                Password = "xxxxxxxxxxx",
                 InitialCatalog = "MainData"
             };
 
